@@ -49,7 +49,7 @@
         font-weight: 500;
       }
 
-      .text{
+      .htext{
         max-width: 400px;
       }
 
@@ -75,10 +75,12 @@
         color:hsl(300, 43%, 22%);
         border: 3px solid transparent;
         border-radius: 3px;
+        display: flex;
       }
 
       .ltext{
         padding-left: 25px;
+        padding-top: 3px;
       }
 
       .list1{
@@ -141,12 +143,50 @@
       }
 
       @media only screen and (max-width : 700px) {
+        .pattern-down{
+          display: none;
+        }
+
+        .pattern-up{
+          display: none;
+        }
+
+        .container{
+          text-align: center;
+          margin: 10px auto;
+          padding: 0%;
+        }
+
         .half{
           display: flex;
           flex-direction: column;
         }
+
         .list{
+          display: block;
           margin: 10px;
+          padding: 20px;
+          width: 85%;
+          /* margin: 0%;
+          padding: 0%; */
+        }
+
+        /* .images{
+          margin-bottom: 5px;
+        } */
+
+        .ltext{
+          margin-bottom: 10px;
+        }
+
+        .reviews{
+          display: block;
+        }
+
+        .review{
+          width: 85%;
+          padding: 20px;
+          margin: 10px auto;
         }
       }
 
@@ -172,7 +212,7 @@
     </div>
     <div class="container">
       <div class="half">
-        <div class="text">
+        <div class="htext">
           <h1>10,000+ of our<br>users love our<br>products.</h1>
           <p>
             We only provide great products combined with excellent customer service.
@@ -181,11 +221,16 @@
         </div>
     
         <div class="lists">
-          <div class="list list1"><img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> 
+          <div class="list list1">
+            <div class="images"><img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""></div> 
             <span class="ltext">Rated 5 Stars in Reviews</span></div>
-          <div class="list list2"><img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> 
+          <div class="list list2">
+            <div class="images">
+              <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt="">
+            </div> 
             <span class="ltext">Rated 5 Stars in Report Guru</span></div>
-          <div class="list list3"><img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> 
+          <div class="list list3">
+            <div class="images"><img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""></div> 
             <span class="ltext">Rated 5 Stars in BestTech</span></div>
         </div>
       </div>

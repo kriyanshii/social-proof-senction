@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social proof section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400&family=Poppins:wght@500&family=Spartan:wght@400;500;700&display=swap');
+
+      *{
+        font-family: 'Spartan', sans-serif;
+      }
+
+      .pattern-up {
+          position: fixed;
+          /* -ms-transform: translate(-33%, 0%); */
+          transform: translate(-33%, 0%);
+      }
+
+      .pattern-down {
+          position: fixed;
+          /* -ms-transform: translate(33%, 15%); */
+          transform: translate(33%, 15%);
+      }
+
+      .container{
+        padding: 100px;
+        /* background: url(./images/bg-pattern-top-desktop.svg); */
+      }
+
+      h1{
+        color: hsl(300, 43%, 22%);
+      }
+
+      p{
+        color: hsl(303, 10%, 53%);
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .text{
+        max-width: 400px;
+      }
+
+      .half{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .lists{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .list{
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 11px;
+        width: 300px;
+        height: 20px;
+        background: hsl(300, 24%, 96%);
+        font-weight: 700;
+        color:hsl(300, 43%, 22%);
+        border: 3px solid transparent;
+        border-radius: 3px;
+      }
+
+      .ltext{
+        padding-left: 25px;
+      }
+
+      .list1{
+        margin-left: -70px;
+      }
+
+      .list3{
+        margin-left: 70px;
+      }
+
+      .reviews{
+        display: flex; 
+      }
+
+      .review{
+        width: 30%;
+        height: 25%;
+        background: hsl(300, 43%, 22%);
+        border: 3px solid transparent;
+        border-radius: 10px;
+        padding: 2% 2% 2% 2%;
+        color: hsl(300, 24%, 96%);
+        font-size: 13px;
+        margin-right: 50px;
+        margin-top: 50px;
+        /* background: url(./images/bg-pattern-bottom-desktop.svg); */
+      }
+
+      .review1{
+        margin-top: 35px;
+      }
+
+      .review3{
+        margin-top: 65px;
+      }
+      /* .head{
+        display: flex;
+      } */
+
+      .avt{
+        width: 35px;
+        height: 35px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        padding-left: 10px;
+        margin-right: 10px;
+      }
+
+      .review > p{
+        color: hsl(302, 18%, 71%);
+        font-size: 11px;
+      }
+
+      .text > span{
+        color: hsl(333, 80%, 67%);
+      }
+
+      .text{
+        display: inline-block;
+      }
+
+      @media only screen and (max-width : 700px) {
+        .half{
+          display: flex;
+          flex-direction: column;
+        }
+        .list{
+          margin: 10px;
+        }
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pattern-up">
+      <img src="images/bg-pattern-top-desktop.svg" alt="Pattern up" class="bg-pattern-up">
+    </div>
+    <div class="pattern-mobile-up" hidden="">
+      <img src="images/bg-pattern-top-mobile.svg" alt="Pattern Mobile up" class="bg-pattern-mobile-up">
+    </div>
+    <div class="pattern-down">
+      <img src="images/bg-pattern-bottom-desktop.svg" alt="Pattern down" class="bg-pattern-down">
+    </div>
+    <div class="container">
+      <div class="half">
+        <div class="text">
+          <h1>10,000+ of our<br>users love our<br>products.</h1>
+          <p>
+            We only provide great products combined with excellent customer service.
+            See what our satisfied customers are saying about our services.
+          </p>
+        </div>
+    
+        <div class="lists">
+          <div class="list list1"><img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> 
+            <span class="ltext">Rated 5 Stars in Reviews</span></div>
+          <div class="list list2"><img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> 
+            <span class="ltext">Rated 5 Stars in Report Guru</span></div>
+          <div class="list list3"><img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> <img src="./images/icon-star.svg" alt=""> 
+            <span class="ltext">Rated 5 Stars in BestTech</span></div>
+        </div>
+      </div>
+      
+      <div class="reviews">
+        <div class="review review1">
+          <div class="head">
+            <img src="images\image-colton.jpg" alt="" class="avt">
+            <div class="text">
+              <h3>Colton Smith </h3>
+              <span>Verified Buyer</span>
+            </div>
+          </div>
+          <p>
+            "We needed the same printed design as the one we had ordered a week prior.
+          Not only did they find the original order, but we also received it in time.
+          Excellent!"
+          </p>
+        </div>
+      
+        <div class="review review2">
+          <div class="head">
+            <img src="./images/image-irene.jpg" alt="" class="avt">
+            <div class="text">
+              <h3>Irene Roberts </h3>
+              <span>Verified Buyer</span>
+            </div>
+          </div>
+          <p>
+            "Customer service is always excellent and very quick turn around. Completely
+          delighted with the simplicity of the purchase and the speed of delivery."
+          </p>
+        </div>
+  
+        <div class="review review3">
+          <div class="head">
+            <img src="./images/image-anne.jpg" alt="" class="avt">
+            <div class="text">
+              <h3>Anne Wallace</h3> 
+              <span>Verified Buyer</span>
+            </div>
+          </div>
+          <p>
+            "Put an order with this company and can only praise them for the very high
+          standard. Will definitely use them again and recommend them to everyone!"
+          </p>        
+        </div>
+      
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
+      >. Coded by <a href="#">Kriyanshi Shah</a>.
+    </div>
+  </body>
+</html>
